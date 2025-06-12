@@ -7,6 +7,10 @@ int shieldX2 = 400;
 int shieldY = int(alienHeight * 21.5);
 int bigRectMadeOfSmallRectWidth1 = 10*10;
 int bigRectMadeOfSmallRectWidth2 = 10*10;
+int buttonX = SCREENX/2 - 60;
+int buttonY = SCREENY/2 + 30;
+int buttonWidth = 120;
+int buttonHeight = 40;
 
 void settings()
 {
@@ -122,12 +126,16 @@ void draw()
      textAlign(CENTER, CENTER);
      text("You Win", width/2, height/2);
      textSize(30);   
+
+     fill(100, 200, 100);
+     rect(buttonX, buttonY, buttonWidth, buttonHeight, 10);
+     fill(0);
+     textSize(20);
+     text("Restart", SCREENX/2, buttonY + buttonHeight/2);
      stop();
    }
    
-   
-   
-      if (millis() - lastPowerupTime >= powerupInterval) 
+   if (millis() - lastPowerupTime >= powerupInterval) 
    {
       dropPowerup();
       lastPowerupTime = millis();
@@ -154,11 +162,6 @@ void draw()
     }
   
   }
-   
-   
-   
-   
-   
    
    
   for (int i = bombs.size() - 1; i >= 0; i--) 
@@ -234,6 +237,12 @@ void displayGameOverMessage()
   textAlign(CENTER, CENTER);
   text("Game Over", width/2, height/2);
   textSize(30);   
+
+  fill(100, 200, 100);
+  rect(buttonX, buttonY, buttonWidth, buttonHeight, 10);
+  fill(0);
+  textSize(20);
+  text("Restart", SCREENX/2, buttonY + buttonHeight/2);
 }
 
 void mousePressed() 
