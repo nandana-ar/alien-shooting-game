@@ -127,7 +127,7 @@ void draw()
      text("You Win", width/2, height/2);
      textSize(30);   
 
-     fill(100, 200, 100);
+     fill(200, 200, 100);
      rect(buttonX, buttonY, buttonWidth, buttonHeight, 10);
      fill(0);
      textSize(20);
@@ -238,7 +238,7 @@ void displayGameOverMessage()
   text("Game Over", width/2, height/2);
   textSize(30);   
 
-  fill(100, 200, 100);
+  fill(200, 200, 100);
   rect(buttonX, buttonY, buttonWidth, buttonHeight, 10);
   fill(0);
   textSize(20);
