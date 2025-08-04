@@ -64,7 +64,7 @@ This is a classic Space Invaders implementation built in Processing. The player 
 
 4. **Run the game**
    - Open `TheFullGame.pde` in Processing
-   - Click the Run button (▶️)
+   - Click the Run button
 
 ## 🎮 How to Play
 
